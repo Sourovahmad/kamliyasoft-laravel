@@ -33,5 +33,10 @@ class HomeController extends Controller
         return view('frontend.sercvices');
     }
 
+    public function estimate_index()
+    {
+        return view('estimate.index');
+    }
+
 
 }

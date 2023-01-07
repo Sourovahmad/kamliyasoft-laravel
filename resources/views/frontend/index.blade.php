@@ -17,7 +17,7 @@
                                 class="cursor">&nbsp</span></h3>
                         <p>Kamliyasoft services private limited a leading and growing Software company, providing services in Mobile apps, website development, Web application and custom solutuon.</p>
                         <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
-                            <a class="btn button-style" href="contact.html">Estimate Project</a>
+                            <a class="btn button-style" href="{{ route('estimate-projet') }}">Estimate Project</a>
                         </div>
                     </div>
                     <div class="col-md-6 mt-md-0 mt-4">
