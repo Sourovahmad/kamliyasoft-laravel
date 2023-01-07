@@ -206,21 +206,41 @@ prevBtn.addEventListener('click', goBack)
 prevFormBtn.addEventListener('click', goBack)
 form.addEventListener('submit', handleFormSubmit)
 
+
+
+
 function handleFormSubmit(e) {
     e.preventDefault()
-    let isConditionChecked = conditionCheckBox.checked
+    
     let name = nameInp.value
     let email = emailInp.value
     let phone = phoneInp.value
     let description = descriptionInp.value
 
-    if (!isConditionChecked) return
+    
     if (!name || !email || !description) return
 
     // use this data for the form submission - for data structure see the formatData function
     let finalData = formatData(name, email, phone, description)
 
-    console.log(finalData)
+    const route = `http://127.0.0.1:8000/estimate-projet-save`;
+
+    fetch(route, {
+        method: "POST",
+        body: JSON.stringify(finalData),
+        headers: {"Content-type": "application/json; charset=UTF-8"}
+      })
+      .then(response => response.json()) 
+      .then(jsonResponse => confirmAndReload() )
+      .catch(err => console.log(err));
+
+    
+}
+
+function confirmAndReload(){
+    if (confirm("We Have Received The Request.We will Contact you Very soon")) {
+        location.reload();
+    }
 }
 
 function formatData(name, email, phone, description) {

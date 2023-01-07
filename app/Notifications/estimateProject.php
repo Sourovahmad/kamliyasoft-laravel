@@ -7,18 +7,19 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class estimateProject extends Notification
+class estimateProject extends Notification implements ShouldQueue
 {
     use Queueable;
+    private $info;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($info)
     {
-        //
+        $this->info = $info;
     }
 
     /**
@@ -41,9 +42,19 @@ class estimateProject extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->subject('New Estimate Request')
+                    ->line('Project Details')
+                    ->line('Date : ' . $this->info['date'])
+                    ->line('Scope : ' . $this->info['scope'])
+                    ->line('Type : ' . $this->info['type'])
+
+
+                    ->line('Name : ' . $this->info['name'])
+                    ->line('Email : ' . $this->info['email'])
+                    ->line('Phone :' . $this->info['phone'])
+                    ->line('Description :' . $this->info['description'])
+            
+                    ->line('Only for Admin');
     }
 
     /**
