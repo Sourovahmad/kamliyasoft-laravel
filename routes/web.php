@@ -23,6 +23,7 @@ Route::get('services', [HomeController::class,'services'])->name('services');
 
 Route::post('newsletter_store', [HomeController::class, 'newsletterStore'])->name('newsletter_store');
 Route::post('appRequest', [HomeController::class, 'appRequest'])->name('appRequest');
+Route::post('contactRequest', [HomeController::class, 'contactRequest'])->name('contactRequest');
 
 
 

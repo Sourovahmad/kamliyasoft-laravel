@@ -165,7 +165,7 @@ if(!empty(session()->get('success'))){
         Swal.fire({
             icon: 'success',
             title: 'Success',
-            text: '<?= session()->getFlashdata('success') ?>',
+            text: 'Successfully Received',
 
 })
     </script>

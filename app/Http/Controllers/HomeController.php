@@ -18,69 +18,20 @@ class HomeController extends Controller
         return view('frontend.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function about()
     {
-        //
+        return view('frontend.about');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreHomeRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreHomeRequest $request)
+    public function contact()
     {
-        //
+        return view('frontend.contact');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Home  $home
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Home $home)
+    public function services()
     {
-        //
+        return view('frontend.sercvices');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Home  $home
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Home $home)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateHomeRequest  $request
-     * @param  \App\Models\Home  $home
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateHomeRequest $request, Home $home)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Home  $home
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Home $home)
-    {
-        //
-    }
 }
