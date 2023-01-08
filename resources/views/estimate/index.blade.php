@@ -55,7 +55,7 @@
                             src="{{ asset('estimate/assets/web-developement-clicked.svg') }}"
                             alt=""
                         />
-                        <p>Desktop</p>
+                        <p>Web App</p>
                         <div class="check-box"></div>
                     </div>
                     <div class="card">
@@ -85,7 +85,7 @@
                             src="{{ asset('estimate/assets/other-clicked.svg') }}"
                             alt=""
                         />
-                        <p>Other</p>
+                        <p>Game</p>
                         <div class="check-box"></div>
                     </div>
                 </div>
@@ -108,15 +108,11 @@
                     <textarea type="text" class="description"></textarea>
 
                     <div class="condition">
-                        <p class="accept">
-                            <input class="accept-condition" type="checkbox" /> I
-                            accept Kamliyasoft NDA
-                        </p>
-                        <span>OR</span>
-                        <p class="nda">
-                            Do you have NDA? Attach
+                   
+                        {{-- <p class="nda">
+                            Upload Project Document
                             <label for="attach_nda">here</label>
-                        </p>
+                        </p> --}}
                         <input type="file" id="attach_nda" hidden />
                     </div>
                     <div class="form-btns">
@@ -128,7 +124,7 @@
                 </form>
                 <div class="btns outer">
                     <button class="btn prev">Previous Step</button>
-                    <button class="btn next">Continue</button>
+                    <button class="btn next" style="background-color: rgb(15, 143, 15)">Continue</button>
                 </div>
             </div>
         </main>
@@ -200,7 +196,7 @@ const typeData = {
             'estimate/assets/other-clicked.svg',
         ],
     },
-    texts: ['Desktop', 'Mobile', 'Other'],
+    texts: ['Desktop', 'Mobile', 'Game'],
 }
 const scopeData = {
     name: 'scope',
@@ -329,21 +325,21 @@ cardCheckBoxes.forEach((c, index) => {
         }
 
         // For Type where user can select only `Others` type of other than this
-        if (selected === 0) {
-            if (checkedBox === 'Other') {
-                data[dataFor.name] = {}
-                setCardCheckBox()
-            } else {
-                if (data[dataFor.name]) {
-                    Object.values(data[dataFor.name]).forEach((c) => {
-                        if (c === 'Other') {
-                            data[dataFor.name] = {}
-                            setCardCheckBox()
-                        }
-                    })
-                }
-            }
-        }
+        // if (selected === 0) {
+        //     if (checkedBox === 'Other') {
+        //         data[dataFor.name] = {}
+        //         setCardCheckBox()
+        //     } else {
+        //         if (data[dataFor.name]) {
+        //             Object.values(data[dataFor.name]).forEach((c) => {
+        //                 if (c === 'Other') {
+        //                     data[dataFor.name] = {}
+        //                     setCardCheckBox()
+        //                 }
+        //             })
+        //         }
+        //     }
+        // }
 
         if (isChecked) {
             data[dataFor.name] = {

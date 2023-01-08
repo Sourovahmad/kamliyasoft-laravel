@@ -58,6 +58,15 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" href="#">Portfolio</a>
                         </li>
                         </div>
+
+
+                        <div class="search-right ml-lg-3">
+                            <li class="nav-item">
+                           <a class="nav-link" href="{{ route("estimate-projet") }}">Estimate Project</a>
+                       </li>
+                       </div>
+
+
                         <div class="search-right ml-lg-3">
                              <li class="nav-item">
                             <a class="nav-link" href="{{ route("contact") }}">Contact Us</a>

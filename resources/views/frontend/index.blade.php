@@ -54,7 +54,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 left-wthree-img order-lg-first order-last">
-                    <img src="{{ asset('images/home1.png') }} " alt="" class="img-fluid img-responsive">
+                    <img src="{{ asset('images/home1.jpg') }}" alt="" class="img-fluid img-responsive">
                 </div>
                 <div class="col-lg-8 right-wthree-img align-self order-lg-last order-first">
                     <div class="row text-center">
