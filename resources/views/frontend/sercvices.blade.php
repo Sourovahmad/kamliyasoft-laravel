@@ -137,7 +137,7 @@ The information in many databases consists of natural-language texts of document
 
     
    <!-- Error messages -->
-   <script src="<?= base_url('js/sweetAlert.js') ?>"></script>
+   <script src="{{ asset('js/sweetAlert.js') }}"></script>
 
 
 <?php 

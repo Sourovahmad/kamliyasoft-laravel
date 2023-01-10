@@ -14,9 +14,15 @@ Author URL: http://w3layouts.com
     <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- //google-fonts -->
 
+
+ 
+
     <!-- Font-Awesome-Icons-CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0-2/css/all.min.css" integrity="sha512-uNOFYDWi8Y7/BN/9S2QDx/BVTEvSwdrZ53NHLgt+fDTdyQeOwmBpHrLrxOT3TQn78H0QKJWLvD7hsDOZ9Gk45A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=" {{ asset('css/starter.css') }}">
+
+    @yield('customCss')
+
     <!-- Template CSS Style link -->
 </head>
 
@@ -47,7 +53,7 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" href="{{ route("about") }}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route("services") }}>">Services</a>
+                            <a class="nav-link" href="{{ route("services") }}">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://www.odddevelopers.com/">Go to Odd</a>
@@ -55,14 +61,14 @@ Author URL: http://w3layouts.com
 
                         <div class="search-right ml-lg-3">
                              <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="{{ route('buy') }}">Buy</a>
                         </li>
                         </div>
 
 
                         <div class="search-right ml-lg-3">
                             <li class="nav-item">
-                           <a class="nav-link" href="{{ route("estimate-projet") }}">Estimate Project</a>
+                           <a class="nav-link btn btn-success btn-outline m-2 p-2 text-light btn-sm" href="{{ route("estimate-projet") }}">Estimate Project</a>
                        </li>
                        </div>
 
@@ -75,8 +81,9 @@ Author URL: http://w3layouts.com
                     </ul>
                 </div>
                 <!-- //search button -->
+
                 <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
+                {{-- <div class="cont-ser-position">
                     <nav class="navigation">
                         <div class="theme-switch-wrapper">
                             <label class="theme-switch" for="checkbox">
@@ -88,7 +95,7 @@ Author URL: http://w3layouts.com
                             </label>
                         </div>
                     </nav>
-                </div>
+                </div> --}}
                 <!-- //toggle switch for light and dark theme -->
             </nav>
         </div>
@@ -199,6 +206,10 @@ Author URL: http://w3layouts.com
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
     </button>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    @yield('customJs')
+
 
 
     <script>
@@ -312,6 +323,7 @@ Author URL: http://w3layouts.com
 
     <!-- owl carousel -->
     <script src="{{ asset('js/owl_carousel.js')  }}"></script>
+    
     <!-- script for tesimonials carousel slider -->
     <script>
         $(document).ready(function () {

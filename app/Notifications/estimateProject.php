@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class estimateProject extends Notification implements ShouldQueue
+class estimateProject extends Notification 
 {
     use Queueable;
     private $info;

@@ -30,6 +30,13 @@ Route::post('contactRequest', [HomeController::class, 'contactRequest'])->name('
 
 
 
+Route::get('buy', function ()
+{
+    return view('product.index');
+})->name('buy');
+
+
+
 
 Route::middleware([
     'auth:sanctum',
