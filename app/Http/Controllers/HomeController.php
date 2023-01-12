@@ -7,6 +7,7 @@ use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
 use App\Notifications\estimateProject;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Notification;
 
 class HomeController extends Controller
@@ -55,9 +56,9 @@ class HomeController extends Controller
             'phone' => $request->phone,
         ];
 
+        $url = 'https://testing.tealbuild.com/estimate-projet-save';
 
-        Notification::route('mail', 'sourov.okk@gmail.com')
-        ->notify(new estimateProject($info));
+      $response = Http::post($url, $info);
 
        return back()->withSuccess("success");
       

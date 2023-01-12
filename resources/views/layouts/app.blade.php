@@ -66,11 +66,6 @@ Author URL: http://w3layouts.com
                         </div>
 
 
-                        <div class="search-right ml-lg-3">
-                            <li class="nav-item">
-                           <a class="nav-link btn btn-success btn-outline m-2 p-2 text-light btn-sm" href="{{ route("estimate-projet") }}">Estimate Project</a>
-                       </li>
-                       </div>
 
 
                         <div class="search-right ml-lg-3">
@@ -78,6 +73,15 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" href="{{ route("contact") }}">Contact Us</a>
                         </li>
                         </div>
+
+
+                        <div class="search-right ml-lg-3">
+                            <li class="nav-item">
+                           <a class="nav-link btn btn-success btn-outline m-2 p-2 text-light btn-sm" href="{{ route("estimate-projet") }}">Estimate Project</a>
+                       </li>
+                       </div>
+
+
                     </ul>
                 </div>
                 <!-- //search button -->
