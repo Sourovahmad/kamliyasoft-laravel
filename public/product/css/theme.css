@@ -3350,27 +3350,7 @@ textarea.form-control.is-invalid {
 .was-validated .input-group .form-select:invalid {
     z-index: 3;
 }
-.btn {
-    display: inline-block;
-    font-weight: 500;
-    line-height: 1;
-    color: #111827;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 1.25rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 0;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+
 @media (prefers-reduced-motion: reduce) {
     .btn {
         transition: none;
@@ -3466,11 +3446,7 @@ fieldset:disabled .btn {
     background-color: #4b5563;
     border-color: #4b5563;
 }
-.btn-success {
-    color: #000;
-    background-color: #19b8a2;
-    border-color: #19b8a2;
-}
+
 .btn-check:focus + .btn-success,
 .btn-success:focus,
 .btn-success:hover {
@@ -3918,15 +3894,7 @@ fieldset:disabled .btn {
     background-color: #fc6229;
     border-color: #fc6229;
 }
-.btn-outline-primary {
-    color: #6f46ff;
-    border-color: #6f46ff;
-}
-.btn-outline-primary:hover {
-    color: #fff;
-    background-color: #6f46ff;
-    border-color: #6f46ff;
-}
+
 .btn-check:focus + .btn-outline-primary,
 .btn-outline-primary:focus {
     box-shadow: 0 0 0 0.25rem rgba(111, 70, 255, 0.5);

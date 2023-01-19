@@ -75,9 +75,9 @@ Author URL: http://w3layouts.com
                         </div>
 
 
-                        <div class="search-right ml-lg-3">
+                        <div class="search-right">
                             <li class="nav-item">
-                           <a class="nav-link btn btn-success btn-outline m-2 p-2 text-light btn-sm" href="{{ route("estimate-projet") }}">Estimate Project</a>
+                           <a class="nav-link btn btn-success btn-outline text-light btn-sm" href="{{ route("estimate-projet") }}" style="font-size: 14px; padding:5px 2px; margin-top:6px">Estimate Project</a>
                        </li>
                        </div>
 
