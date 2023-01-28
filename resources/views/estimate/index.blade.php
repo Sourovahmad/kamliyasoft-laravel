@@ -124,7 +124,7 @@
                 </form>
                 <div class="btns outer">
                     <button class="btn prev">Previous Step</button>
-                    <button class="btn next" style="background-color: rgb(15, 143, 15)">Continue</button>
+                    <button class="btn next" style="background-color: rgb(15, 143, 15)" disabled="true" >Continue</button>
                 </div>
             </div>
         </main>
@@ -285,10 +285,20 @@ function goBack() {
         formContainer.style.display = 'none'
         nextBtn.textContent = 'Continue'
     }
-    setData()
+    setData();
+
+
+    if (typeof data[cardData[selected]?.name] === 'undefined') {
+        nextBtn.disabled = true;
+    } else {
+        nextBtn.disabled = false;
+    }
 }
 
 function goNext() {
+
+
+
     allStepperLi[selected].classList.add('done')
     selected = selected === allStepperLi.length - 1 ? selected : (selected += 1)
     allStepperLi[selected].classList.add('active')
@@ -303,8 +313,19 @@ function goNext() {
         headerTitle.textContent = 'Fill your contact details.'
         btnsContainer.style.display = 'none'
     } else {
-        setData()
+        setData();
     }
+
+
+    if (typeof data[cardData[selected]?.name] === 'undefined') {
+        nextBtn.disabled = true;
+    } else {
+        nextBtn.disabled = false;
+    }
+
+
+
+    
 }
 
 cardCheckBoxes.forEach((c, index) => {
@@ -351,7 +372,13 @@ cardCheckBoxes.forEach((c, index) => {
             delete data[dataFor.name][index]
         }
 
-        formatData()
+        formatData();
+
+        if (Object.keys(data[dataFor.name]).length > 0) {
+            nextBtn.disabled = false;
+        } else {
+            nextBtn.disabled = true;
+        }
     })
 })
 

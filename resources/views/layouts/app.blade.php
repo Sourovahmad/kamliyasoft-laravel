@@ -15,8 +15,7 @@ Author URL: http://w3layouts.com
     <!-- //google-fonts -->
 
 
- 
-
+  
     <!-- Font-Awesome-Icons-CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0-2/css/all.min.css" integrity="sha512-uNOFYDWi8Y7/BN/9S2QDx/BVTEvSwdrZ53NHLgt+fDTdyQeOwmBpHrLrxOT3TQn78H0QKJWLvD7hsDOZ9Gk45A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=" {{ asset('css/starter.css') }}">
@@ -176,14 +175,14 @@ Author URL: http://w3layouts.com
                         </div>
                         <div class="columns-2 mt-4">
                             <ul class="social">
-                                <li><a href="#facebook"><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+                                <li><a href="https://www.facebook.com/kamliyasoft"><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
                                 </li>
-                                <li><a href="#twitter"><span class="fab fa-twitter" aria-hidden="true"></span></a>
+                                <li><a href="https://twitter.com/kamliyasoft"><span class="fab fa-twitter" aria-hidden="true"></span></a>
                                 </li>
                                 
-                                <li><a href="#instagram"><span class="fab fa-instagram" aria-hidden="true"></span></a>
+                                <li><a href="https://www.instagram.com/kamliyasoft/"><span class="fab fa-instagram" aria-hidden="true"></span></a>
                                 </li>
-                                <li><a href="#linkedin"><span class="fab fa-linkedin-in" aria-hidden="true"></span></a>
+                                <li><a href="https://www.linkedin.com/company/kamliyasoft-services-private-limited/"><span class="fab fa-linkedin-in" aria-hidden="true"></span></a>
                                 </li>
                             </ul>
                         </div>

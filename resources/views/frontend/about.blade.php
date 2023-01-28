@@ -93,7 +93,7 @@
                     <h3 class="title-big">Passion, Dedication And Hard Work</h3>
                     <p class="mt-4">As an Experienced Software comapany, kamliyasoft offers Standard solutions and delivery models to help you move forward. Digital transformation can only occur when supported by innovation and enhanced customer experience. The kamliyasoft process is full lifecycle, starting with the end-user, and covers all aspects of your business functions. </p>
                     <p class="mt-4">Our development and design teams uniquely enable you to make your product best and collaboration technologies more efficiently..</p>
-                    <a class="btn button-style mt-lg-5 mt-4" href="services.html">Learn More </a>
+                    <a class="btn button-style mt-lg-5 mt-4" href="{{ route('services') }}"> Learn More </a>
                 </div>
                 <div class="content-right col-lg-6 pl-lg-4 mt-lg-0 mt-md-5 mt-5 align-self">
                     <div class="row content4-right-grids mb-lg-5 mb-5">

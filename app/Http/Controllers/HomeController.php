@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Home;
 use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
+use App\Notifications\contactEmail;
 use App\Notifications\estimateProject;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -58,10 +59,50 @@ class HomeController extends Controller
 
         $url = 'https://testing.tealbuild.com/estimate-projet-save';
 
-      $response = Http::post($url, $info);
+        $response = Http::post($url, $info);
 
        return back()->withSuccess("success");
       
+    }
+
+
+
+    public function contactRequest(Request $request)
+    {
+        
+        $info = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'subject' => $request->subject,
+            'website' => $request->website,
+            'message' => $request->message,
+        ];
+
+        $url = 'https://testing.tealbuild.com/contact-save';
+        $response = Http::post($url, $info);
+        
+       return back()->withSuccess("success");
+    }
+
+
+    public function contact_save(Request $request)
+    {
+        $info = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'subject' => $request->subject,
+            'website' => $request->website,
+            'message' => $request->message,
+        ];
+
+
+        Notification::route('mail', 'vinod.kamliyasoft@gmail.com')
+        ->notify(new contactEmail($info));
+
+        return back()->withSuccess("success");
+
     }
 
 

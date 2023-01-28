@@ -29,6 +29,9 @@ Route::post('contactRequest', [HomeController::class, 'contactRequest'])->name('
 
 
 
+Route::post('contact-save', [HomeController::class, 'contact_save'])->name('contact_save');
+
+
 
 Route::get('buy', function ()
 {

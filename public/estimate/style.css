@@ -502,3 +502,8 @@ main {
         height: 0px;
     }
 }
+
+
+.btn.next:disabled {
+    background-color: rgb(197, 197, 197);
+}

@@ -35,7 +35,8 @@
                                 </div>
                                 <div class="cont-right">
                                     <h6>Company Address</h6>
-                                    <p>E Block Sector 3 Noida 201301..</p>
+                                    <p>E block sector 3 Noida 201301.
+                                    </p>
                                 </div>
                             </div>
                             <div class="d-flex contact-grid mt-4 pt-lg-2">
@@ -44,7 +45,8 @@
                                 </div>
                                 <div class="cont-right">
                                     <h6>Call Us</h6>
-                                    <p><a href="tel:+1(21) 234 4567">+91 9837458038</a></p>
+                                    <p><a href="tel:+91(9870907906)">+91 9870907906 , +91 9837458038
+                                    </a></p>
                                 </div>
                             </div>
                             <div class="d-flex contact-grid mt-4 pt-lg-2">
@@ -62,7 +64,7 @@
                                 </div>
                                 <div class="cont-right">
                                     <h6>Skype</h6>
-                                    <p><a href="#" class="mail">kamliyasoft</a></p>
+                                    <p><a href="vk82880" class="mail">vk82880</a></p>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +113,7 @@ if(!empty(session()->get('success'))){
         Swal.fire({
             icon: 'success',
             title: 'Success',
-            text: 'Successfully Received',
+            text: 'Thanks for your email , we will reply soon',
 })
     </script>
   
