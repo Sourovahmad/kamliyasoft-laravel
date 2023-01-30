@@ -79,9 +79,11 @@ class HomeController extends Controller
             'message' => $request->message,
         ];
 
+
         $url = 'https://testing.tealbuild.com/contact-save';
         $response = Http::post($url, $info);
-        
+
+       return back()->withSuccess("success");
        return back()->withSuccess("success");
     }
 

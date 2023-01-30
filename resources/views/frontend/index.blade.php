@@ -40,7 +40,7 @@
                     <h3 class="mb-3">Welcome To kamliyasoft</h3>
                     <p>kamliyasoft is expertise in the field of software development, Blockchain development, Native apps, Cross-platform apps, ERP solutions, web design, Development, IoT, Artificial intelligence, consultancy services.</p>
                     <p class="mt-3">We provide the best Application service and provide the best web application development. Software development, Blockchain development, Web development, Website Designing, IOS App Development, Android App Development are some core functionalities of kamliyasoft professionals. We have advanced and extensive knowledge of Social Media Marketing, Branding, and reputation management.</p>
-                    <a class="btn button-style mt-lg-5 mt-4" href="services.html">Learn More </a>
+                    <a class="btn button-style mt-lg-5 mt-4" href="{{ asset('images/bann1.png') }}">Learn More </a>
                 </div>
             </div>
         </div>

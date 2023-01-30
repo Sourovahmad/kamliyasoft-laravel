@@ -72,6 +72,8 @@
                     <div class="col-md-7 contact-right mt-md-0 mt-4">
                         <form action="{{ route("contactRequest") }}" method="post" class="signin-form">
                         @csrf
+
+                        <input type="hidden" name="recaptcha" id="recaptcha">
                             <div class="input-grids">
                                 <input type="text" name="name" id="w3lName" placeholder="Your Name*"
                                     class="contact-input" required="" />
@@ -128,12 +130,25 @@ Swal.fire({
   text: 'Something went wrong!. Please Try Again',
 })
 
+
+
+
+
+
 </script>
 
 <?php    }   ?>
 
-
-
+<script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.sitekey') }}"></script>
+<script>
+         grecaptcha.ready(function() {
+             grecaptcha.execute('{{ config('services.recaptcha.sitekey') }}', {action: 'contact'}).then(function(token) {
+                if (token) {
+                  document.getElementById('recaptcha').value = token;
+                }
+             });
+         });
+</script>
 
 
 
