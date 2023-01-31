@@ -69,6 +69,9 @@ class HomeController extends Controller
 
     public function contactRequest(Request $request)
     {
+        $request->validate([
+            'g-recaptcha-response' => 'required'
+        ]);
         
         $info = [
             'name' => $request->name,
@@ -83,7 +86,6 @@ class HomeController extends Controller
         $url = 'https://testing.tealbuild.com/contact-save';
         $response = Http::post($url, $info);
 
-       return back()->withSuccess("success");
        return back()->withSuccess("success");
     }
 

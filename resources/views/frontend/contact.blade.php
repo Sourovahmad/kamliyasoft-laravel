@@ -5,6 +5,16 @@
 @section('content') 
 
 
+    <script>
+window.onload = function() {
+  var recaptcha = document.forms["captchaForm"]["g-recaptcha-response"];
+  recaptcha.required = true;
+  recaptcha.oninvalid = function(e) {
+    // do something
+    alert("Please complete the captcha");
+  }
+}
+</script>
 
 
     <!-- inner banner -->
@@ -70,10 +80,10 @@
                         </div>
                     </div>
                     <div class="col-md-7 contact-right mt-md-0 mt-4">
-                        <form action="{{ route("contactRequest") }}" method="post" class="signin-form">
+                        <form action="{{ route("contactRequest") }}" method="post" class="signin-form" id="captchaForm">
                         @csrf
 
-                        <input type="hidden" name="recaptcha" id="recaptcha">
+                       
                             <div class="input-grids">
                                 <input type="text" name="name" id="w3lName" placeholder="Your Name*"
                                     class="contact-input" required="" />
@@ -88,6 +98,18 @@
                                 <textarea name="message" id="w3lMessage" placeholder="Type your message here*"
                                     required=""></textarea>
                             </div>
+
+                            <div class="mb-3">
+
+                                @if(config('services.recaptcha.sitekey'))
+                                <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.sitekey') }}">
+                                </div>
+                                
+                            @endif
+                            </div>
+                       
+
+
                             <button type="submit" class="btn button-style">Send Message</button>
                         </form>
                     </div>

@@ -211,6 +211,9 @@ Author URL: http://w3layouts.com
     </button>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    
     @yield('customJs')
 
 
