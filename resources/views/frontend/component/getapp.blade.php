@@ -15,7 +15,7 @@
                             <form action="{{ route('appRequest') }} " method="post" class="d-flex wrap-align">
                                    @csrf
 
-                                <input type="text" placeholder="Enter your Mobile Number" name="email" required="required" />
+                                <input type="email" placeholder="Enter your Email Address" name="email" required="required" />
                                 <button type="submit" class="button-style">Get App</button>
                             </form>
                         </div>

@@ -199,7 +199,7 @@ if(!empty(session()->get('success'))){
         Swal.fire({
             icon: 'success',
             title: 'Success',
-            text: 'Successfully Received',
+            text: 'Thanks for your email, We will reply soon',
 })
     </script>
   

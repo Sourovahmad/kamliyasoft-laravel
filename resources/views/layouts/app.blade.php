@@ -165,7 +165,7 @@ Author URL: http://w3layouts.com
                         <h3>Newsletter </h3>
                         <div class="end-column">
 
-                            <form action=" {{ route('newsletter_store') }} ?>" method="POST" class="subscribe" method="post">
+                            <form action=" {{ route('appRequest') }} ?>" method="POST" class="subscribe" method="post">
                                     @csrf
                                 <input type="email" name="email" placeholder="Email Address" required="">
                                 <button class="button-style"><span class="fa fa-paper-plane"

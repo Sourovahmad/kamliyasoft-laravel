@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Home;
 use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
+use App\Notifications\appRequest;
 use App\Notifications\contactEmail;
 use App\Notifications\estimateProject;
 use Illuminate\Http\Request;
@@ -107,6 +108,43 @@ class HomeController extends Controller
 
         return back()->withSuccess("success");
 
+    }
+
+
+    public function appRequest(Request $request)
+    {
+        $request->validate([
+            'email' => 'required'
+        ]);
+
+        $info = [
+            'email' => $request->email,
+        ];
+
+
+
+        $url = 'https://testing.tealbuild.com/app-request-sent';
+        $response = Http::post($url, $info);
+
+       return back()->withSuccess("success");
+
+
+    }
+
+
+    // tealbuild function
+
+    public function app_request_sent(Request $request)
+    {
+
+        $info = [
+            'email' => $request->email
+        ];
+
+        Notification::route('mail', 'vinod.kamliyasoft@gmail.com')
+        ->notify(new appRequest($info));
+
+        return back()->withSuccess("success");
     }
 
 

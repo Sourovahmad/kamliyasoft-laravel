@@ -50,3 +50,16 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+
+
+
+
+
+
+
+
+// email sender for app request
+Route::post('app-request-sent', [HomeController::class, 'app_request_sent'])->name('app_request_sent');
+
