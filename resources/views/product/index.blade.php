@@ -80,16 +80,15 @@
                               </div>
                               <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"></span>
                               <picture class="position-relative overflow-hidden d-block bg-light">
-                                  <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                                  <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/football.jpg') }}" alt="">
                               </picture>
                                   <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                      <button class="btn btn-quick-add">   <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                      <button class="btn btn-quick-add">   <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                                   </div>
                           </div>
                           <div class="card-body px-0">
-                              <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                              <small class="text-muted d-block">With Source code</small>
-                                      <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                              <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Football  game with Animation</a>
+                     
                           </div>
                       </div>
                       <!--/ Card Product-->
@@ -108,16 +107,15 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/cricket.jpg') }}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                        <button class="btn btn-quick-add"> <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                        <button class="btn btn-quick-add"> <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                                <small class="text-muted d-block">With Source code</small>
-                                        <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                                <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Cricket game</a>
+                                
                             </div>
                         </div>
                         <!--/ Card Product-->
@@ -136,21 +134,49 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted">  </span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/poker.jpg') }}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                        <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                        <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                                <small class="text-muted d-block">With Source code</small>
-                                        <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                                <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Poker Game</a>
                             </div>
                         </div>
                         <!--/ Card Product-->
   
                       </div>
+
+
+
+
+
+                      
+                      <div class="swiper-slide">
+
+                        <!-- Card Product-->
+                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                            <div class="card-img position-relative">
+                                <div class="card-badges">
+                                        {{-- <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span> --}}
+                                </div>
+                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted">  </span>
+                                <picture class="position-relative overflow-hidden d-block bg-light">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/fantasy.jpg') }}" alt="">
+                                </picture>
+                                    <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                        <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0">
+                                <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Fantasy game</a>
+                            </div>
+                        </div>
+                        <!--/ Card Product-->
+  
+                      </div>
+                    
                     
                     
                     
@@ -226,16 +252,15 @@
                               </div>
                               <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"></span>
                               <picture class="position-relative overflow-hidden d-block bg-light">
-                                  <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                                  <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/onlineshop.jpg') }}" alt="">
                               </picture>
                                   <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                      <button class="btn btn-quick-add">   <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                      <button class="btn btn-quick-add">   <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                                   </div>
                           </div>
                           <div class="card-body px-0">
-                              <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                              <small class="text-muted d-block">With Source code</small>
-                                      <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                              <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">online shop website</a>
+                       
                           </div>
                       </div>
                       <!--/ Card Product-->
@@ -254,16 +279,15 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/personal.jpg') }}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                        <button class="btn btn-quick-add"> <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                        <button class="btn btn-quick-add"> <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                                <small class="text-muted d-block">With Source code</small>
-                                        <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                                <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Personal website</a>
+                                
                             </div>
                         </div>
                         <!--/ Card Product-->
@@ -282,16 +306,41 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted">  </span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/university.jpg') }}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                        <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                        <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                                <small class="text-muted d-block">With Source code</small>
-                                        <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                                <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">university website</a>
+                            </div>
+                        </div>
+                        <!--/ Card Product-->
+  
+                      </div>
+
+
+
+
+                      <div class="swiper-slide">
+
+                        <!-- Card Product-->
+                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                            <div class="card-img position-relative">
+                                <div class="card-badges">
+                                        {{-- <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span> --}}
+                                </div>
+                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted">  </span>
+                                <picture class="position-relative overflow-hidden d-block bg-light">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/ecommerceonlineshop.jpg') }}" alt="">
+                                </picture>
+                                    <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                        <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0">
+                                <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">E-commerce and online shop website</a>
                             </div>
                         </div>
                         <!--/ Card Product-->
@@ -371,16 +420,15 @@
                         </div>
                         <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"></span>
                         <picture class="position-relative overflow-hidden d-block bg-light">
-                            <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                            <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/ecommerceapp.jpg') }}" alt="">
                         </picture>
                             <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                <button class="btn btn-quick-add">   <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                <button class="btn btn-quick-add">   <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                             </div>
                     </div>
                     <div class="card-body px-0">
-                        <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                        <small class="text-muted d-block">With Source code</small>
-                                <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                        <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">eCommerce  App</a>
+                       
                     </div>
                 </div>
                 <!--/ Card Product-->
@@ -399,16 +447,15 @@
                           </div>
                           <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"></span>
                           <picture class="position-relative overflow-hidden d-block bg-light">
-                              <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                              <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/onlineexam.jpg') }}" alt="">
                           </picture>
                               <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                  <button class="btn btn-quick-add"> <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                  <button class="btn btn-quick-add"> <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                               </div>
                       </div>
                       <div class="card-body px-0">
-                          <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                          <small class="text-muted d-block">With Source code</small>
-                                  <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                          <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Online Exam App</a>
+                          
                       </div>
                   </div>
                   <!--/ Card Product-->
@@ -427,16 +474,45 @@
                           </div>
                           <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted">  </span>
                           <picture class="position-relative overflow-hidden d-block bg-light">
-                              <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/dummyForProduct.jpg') }}" alt="">
+                              <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/marketplace.jpg') }}" alt="">
                           </picture>
                               <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                  <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Buy</button>
+                                  <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
                               </div>
                       </div>
                       <div class="card-body px-0">
-                          <a class="text-decoration-none link-cover" href="{{ route('contact') }}">Software For Management</a>
-                          <small class="text-muted d-block">With Source code</small>
-                                  <p class="mt-2 mb-0 small"><s class="text-muted">$150</s> <span class="text-danger">$49</span></p>
+                          <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Marketplace App</a>
+                          
+                      </div>
+                  </div>
+                  <!--/ Card Product-->
+
+                </div>
+
+
+
+
+                
+
+                <div class="swiper-slide">
+
+                  <!-- Card Product-->
+                  <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                      <div class="card-img position-relative">
+                          <div class="card-badges">
+                                  {{-- <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span> --}}
+                          </div>
+                          <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted">  </span>
+                          <picture class="position-relative overflow-hidden d-block bg-light">
+                              <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{ asset('images/social.jpg') }}" alt="">
+                          </picture>
+                              <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                  <button class="btn btn-quick-add"><iconify-icon icon="material-symbols:shopping-cart"></iconify-icon> Estimate</button>
+                              </div>
+                      </div>
+                      <div class="card-body px-0">
+                          <a class="text-decoration-none link-cover" href="{{ route('estimate-projet') }}">Social Apps</a>
+                          
                       </div>
                   </div>
                   <!--/ Card Product-->
